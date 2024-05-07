@@ -5,14 +5,15 @@ import ColumnForm from '../ColumnForm/ColumnForm';
 import { getAllColumns } from '../../redux/store';
 import { getListById } from '../../redux/store';
 import { getColumnsByList } from '../../redux/store';
+import { useParams } from 'react-router-dom';
 
 
 const List = () => {
 
-    
+    const { listId } = useParams();
     //const columns = useSelector(getAllColumns);
-    const columns = useSelector(state => getColumnsByList(state, 1));
-    const listData = useSelector(state => getListById(state, 1));
+    const columns = useSelector(state => getColumnsByList(state, listId));
+    const listData = useSelector(state => getListById(state, listId));
         
 
 
