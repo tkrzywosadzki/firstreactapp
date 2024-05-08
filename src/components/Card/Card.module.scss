@@ -11,3 +11,15 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+
+
+}
+
+.isFavorite {
+    color: $color-warning;
+}

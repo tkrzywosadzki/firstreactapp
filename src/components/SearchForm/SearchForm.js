@@ -20,7 +20,7 @@ const SearchForm = () => {
 
     useEffect(() => {
         dispatch(updateSearchString({searchInput: ''}));
-    }, []);
+    }, [dispatch]);
 
     return (
         <form className={styles.searchForm} onSubmit={handleSubmit}>
