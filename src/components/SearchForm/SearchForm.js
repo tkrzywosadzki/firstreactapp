@@ -14,12 +14,12 @@ const SearchForm = () => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        dispatch(updateSearchString({ searchInput }));
+        dispatch(updateSearchString( searchInput ));
         
     };
 
     useEffect(() => {
-        dispatch(updateSearchString({searchInput: ''}));
+        dispatch(updateSearchString(''));
     }, [dispatch]);
 
     return (
